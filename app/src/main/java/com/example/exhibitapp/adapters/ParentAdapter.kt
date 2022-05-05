@@ -1,4 +1,4 @@
-package adapters
+package com.example.exhibitapp.adapters
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -13,13 +13,10 @@ import com.example.exhibitapp.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.parent_recyclerview.view.*
-import models.Exhibit
-import models.ExhibitItem
+import com.example.exhibitapp.models.Exhibit
+import com.example.exhibitapp.models.ExhibitItem
 
 class ParentAdapter: RecyclerView.Adapter<ParentAdapter.TitleViewHolder>() {
-
-    private var exhibitList = Exhibit()
-
 
     inner class TitleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 

@@ -1,6 +1,6 @@
 package com.example.exhibitapp
 
-import adapters.ParentAdapter
+import com.example.exhibitapp.adapters.ParentAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -10,11 +10,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
-import models.Exhibit
-import models.ExhibitItem
-import repository.Repository
-import viewmodel.ExhibitViewModel
-import viewmodel.ExhibitViewModelFactory
+import com.example.exhibitapp.repository.Repository
+import com.example.exhibitapp.viewmodel.ExhibitViewModel
+import com.example.exhibitapp.viewmodel.ExhibitViewModelFactory
 
 class MainActivity : AppCompatActivity() {
 

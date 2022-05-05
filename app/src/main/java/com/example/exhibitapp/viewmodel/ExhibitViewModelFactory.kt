@@ -1,8 +1,8 @@
-package viewmodel
+package com.example.exhibitapp.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import repository.Repository
+import com.example.exhibitapp.repository.Repository
 
 class ExhibitViewModelFactory(val repository: Repository): ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
