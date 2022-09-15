@@ -8,7 +8,7 @@ import com.example.exhibitapp.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.child_recyclerview_item.view.*
 
-
+//Child Adapter for the horizontal scroll list of images
 class ChildAdapter(private var exhibitImageList: ArrayList<String>) : RecyclerView.Adapter<ChildAdapter.ChildViewHolder>() {
 
     inner class ChildViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)

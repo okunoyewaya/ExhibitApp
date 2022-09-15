@@ -16,6 +16,8 @@ import kotlinx.android.synthetic.main.parent_recyclerview.view.*
 import com.example.exhibitapp.models.Exhibit
 import com.example.exhibitapp.models.ExhibitItem
 
+
+// Parent Adapter for the vertical scroll list of images
 class ParentAdapter: RecyclerView.Adapter<ParentAdapter.TitleViewHolder>() {
 
     inner class TitleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
