@@ -7,6 +7,7 @@ object RestExhibitsLoader {
 
     private const val BASE_URL = "https://my-json-server.typicode.com"
 
+    //Api instance used to handle HTTP calls
     val api: ExhibitsLoader by lazy {
         Retrofit.Builder()
             .baseUrl(BASE_URL)

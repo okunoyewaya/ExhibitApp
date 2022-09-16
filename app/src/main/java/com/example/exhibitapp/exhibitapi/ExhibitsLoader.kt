@@ -6,6 +6,7 @@ import retrofit2.http.GET
 
 interface ExhibitsLoader {
 
+    // GET response to get Exhibit json list
     @GET("/Reyst/exhibit_db/list")
     suspend fun getExhibitList(): Response<Exhibit>
 }
