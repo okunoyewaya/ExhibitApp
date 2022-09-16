@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //sets recyclerView in activity
         setUpRecyclerView()
 
         val repository = Repository()
