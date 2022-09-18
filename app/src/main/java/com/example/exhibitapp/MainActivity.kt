@@ -33,7 +33,9 @@ class MainActivity : AppCompatActivity() {
         viewModel.getExhibit()
         viewModel.exhibitResponse.observe(this, Observer { response ->
             if(response.isSuccessful){
-                myAdapter.differ.submitList(response.body()?.take(3))
+                // Response exhibit list with duplicates filtered out
+                val exhibitList = response.body()?.take(3)
+                myAdapter.differ.submitList(exhibitList)
             } else {
                 Toast.makeText(this, response.errorBody().toString(), Toast.LENGTH_LONG).show()
             }
